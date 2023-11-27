@@ -3,15 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deploy 2</title>
+    <title>Utilitarios</title>
 </head>
+<style>
+    body {
+        margin-left: 40px;
+        margin-right: 50px;
+        background-color: rgb(239, 246, 243);
+        color: #0d0c0c;
+    }
+
+    /* Style for the navigation menu */
+    ul.nav-menu {
+        list-style-type: none;
+        margin: 10px;
+        padding: 0px;
+        background-color: #000000;
+        overflow: hidden;
+    }
+
+    ul.nav-menu li {
+        float: left;
+    }
+
+    ul.nav-menu li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    ul.nav-menu li a:hover {
+        background-color: #bba2a2;
+        color: black;
+    }
+</style>
 <body>
-    <h1>
-        Deploy page2
-    </h1>
-    <h3>
-      This page was created to make a deploy on github from command line
-    </h3>
-    ...
+    <!-- Navigation Menu -->
+    <ul class="nav-menu">
+        <li><a href="#section1">Home</a></li>
+        <li><a href="#section2">Utility Software</a></li>
+        <li><a href="#section3">List of Types Of Utility Sowftware</a></li>
+        <li><a href="#section4">Advantages</a></li>
+       
+    </ul>
+
+    <h1 style="font-size: 400%; text-align: center;">Utility Software</h1>
+ 
+
+    <section id="section2">
+        <h2>Utility Software</h2>
+        <!-- Your content for Utility Software section -->The Utility Software is system software that helps to maintain the proper and smooth functioning of a Computer System. 
+        It assists the Operating System to manage, organize, maintain, and optimize the functioning of the computer system.
+   <br>
+      Utility Software performs certain tasks like virus detection, installation, and uninstallation, data backup, deletion of unwanted files, etc.
+           Some examples are antivirus software, file management tools, compression tools, disk management tools, etc.
+
+        
+    </section>
+
+    <section id="section3">
+        <h2>List Of Types of Utility Software</h2>
+        <!-- Your content for List of Types section -->
+          <i>
+           1. Antivirus  <br>
+           2. File Management System <br>
+           3. Compression Tools <br>
+           4. Disk Management Tools <br>
+           5. Disk Cleanup Tool <br>
+           6. Disk Defragmenter <br>
+           7. Backup Utility <br>
+           </i>
+
+
+           <h3>
+            1. Antivirus
+            </h3>
+             <p>
+              A virus is a malicious software that enters the system along with a host program. Moreover, it multiplies with time and makes several copies which in turn slows down and corrupts the system. 
+              An antivirus is a utility software that helps to keep the computer virus-free. Moreover, it notifies when any malicious file is detected and removes such files.
+               In addition, it scans any new device attached to the computer and discards any virus if there. Moreover, it also scans the system from time to time for any threats and disposes of them.
+               Examples of antivirus are McAfee Antivirus, Quickheal Antivirus, Windows Defender, etc.
+              <br><br>
+              <center> <img src="Antivirus.jpg" alt="Antivirus" width="500" height="300"> </center>
+             </p>
+            <br>
+            <h3>
+              2. File Management System
+            </h3>
+             <p>
+              These utility software are used to manage files of the computer system. Since files are an important part of the system as all the data is stored in the files. Therefore, this utility software 
+              help to browse, search, arrange, find information, and quickly preview the files of the system.
+              <br>
+              Windows Explorer is a default file management tool present in the system. Some other examples of file management tools are Google Desktop, Double Commander, Directory Opus, etc.
+            </p>
+          
+            <h3>
+              3. Compression Tools
+            </h3>
+            <p>
+              An important part of a computer is storage space, it is very important to maintain this storage. Therefore, we use certain utility software to compress big files and decrease their size, these are compression tools.
+              The format of the files changes while compressing and we cannot access or edit them directly. In addition, we can easily decompress the file and get the original file back. 
+              Examples of compression tools are WinZip, WinRAR, WinAce, PeaZip, 7-Zip, etc.
+              </p> 
+            <h3>
+              4.Disk Management Tools
+            </h3>
+            <p>
+              These utility software are used to manage data on disks. Moreover, they perform functions like partitioning devices, manage drives, etc.Examples of disk management tools are MiniTool Partition Wizard, Paragon Partition Manager, etc.
+            </p> 
+            <h3>
+              5. Disk Cleanup Tools
+            </h3>
+            <p>
+              This utility software helps to free up the disk space. In addition, the files which are no longer in use are removed from the disk. Examples are Razer Cortex, Piriform CCleaner, etc.
+            </p> 
+            <h3>
+              6. Disk Defragmenter
+            </h3>
+            <p>
+              This utility software helps to reduce the fragmentation and hence, reduces the access speed. Defragmenting refers to rearranging files and storing them in contiguous memory locations. Moreover, saves time in reading from files and writing files to disk.
+               Examples of disk defragmenters are Perfect disk, Deflaggler, etc.
+            </p> 
+            <h3>
+              7. Backup Utility
+            </h3>
+           <p>
+            This utility software helps to back up the files, folders, databases, or complete disks. Moreover, backup refers to duplicating the disk information so that the data can be restored if any data loss happens.
+           </p> <br>
+    </section>
+
+    <section id="section4">
+        <h1>Advantages of Utility Software</h1>
+        <!-- Your content for Advantages section -->
+       <ol>
+        <li>Enhances performance.</li>
+        <li>Manages space.</li>
+        <li>Manages files and data.</li>
+        <li>Helps to customize interface and desktop.</li>
+        <li>Helps to remove useless files. </li>
+        <li>Keep the system safe and secure.</li>
+         <li>Helps to recover files after a loss.</li>
+         </ol>
+    </section>
+ 
 </body>
+
+<!-- JavaScript for smooth scrolling -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $("a[href^='#']").on('click', function(event) {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 800, function() {
+            window.location.hash = hash;
+        });
+    });
+</script>
 </html>
